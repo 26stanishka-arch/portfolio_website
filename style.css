@@ -43,6 +43,15 @@ section {
   font-family: "Orbitron";
   font-size: 64px;
 }
+.hero h1 span {
+  color: var(--red);
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+
 
 .hero h1 span {
   color: var(--red);
@@ -203,6 +212,37 @@ button {
   svg {
     width: 80px;
   }
+@media (max-width: 768px) {
+
+  .hero-buttons a {
+    border: 3px solid white;
+    color: white;
+    background: transparent;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hero-buttons a {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  }
+
+}@media (max-width: 768px) {
+
+  .hero-buttons a {
+    /* keeps your red border */
+    border: 3px solid var(--red);
+
+    /* adds WHITE outline outside the red border */
+    box-shadow: 0 0 0 3px white;
+
+    /* ensures visibility */
+    color: var(--cream);
+    background: transparent;
+  }
+
+}
+
 }
 
 
